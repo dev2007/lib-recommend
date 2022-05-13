@@ -26,6 +26,15 @@ module.exports = {
       '@renovamen/vuepress-plugin-baidu-tongji', {
         'ba': '7d92404ff833d14674e677060218ec5e'
       }
+    ],
+    [
+      '@vssue/vuepress-plugin-vssue', {
+        platform: 'github',
+        owner: 'dev2007',
+        repo: 'gitalk-comment',
+        clientId: '6852269af4df47405b4e',
+        clientSecret: '65e33f2cbf43b13a37258667c63fa5d1aba615c2',
+      }
     ]
   ],
   themeConfig: {
@@ -38,19 +47,14 @@ module.exports = {
     ],
     sidebar: [
       {
-        title: '开源分类',
-        path: '/list',
-        children: []
-      },
-      {
-        title: '开源项目',
-        path: '/project/',
+        title: '框架',
+        path: '/framework/',
         children: [
-          
+          `/framework/springboot.html`
         ]
       },
       {
-        title: '开源组件',
+        title: '组件',
         path: '/lib/',
         children: [
           
